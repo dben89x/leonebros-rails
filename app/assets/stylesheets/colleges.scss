@@ -1,0 +1,62 @@
+@import 'variables';
+
+.colleges {
+	margin: 20px;
+	padding: 20px;
+}
+.college-card {
+	text-align: left;
+	background-color: lighten($white, 3%);
+	box-shadow: 1px 1px 6px 1px darken($white, 5%);
+	border-radius: 6px;
+	color: lighten($grey, 10%);
+	margin: 20px;
+	padding: 20px;
+	.details { width: 50%; }
+	.sports { width: 50%; }
+	.fa { margin-right: 10px;}
+	a {
+		text-decoration: none;
+		color: $green;
+		transition: 0.3s;
+		margin: 3px;
+		&:hover {
+			color: darken($green, 10%);
+			text-decoration: none;
+		}
+	}
+	.name {
+		margin-bottom: 10px;
+		.college {
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.mascot {
+			font-size: 25px;
+			font-weight: 700;
+		}
+	}
+	.location {
+		font-size: 23px;
+		font-weight: 700;
+	}
+	.conference {
+		font-size: 17px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.enrollment, .selectivity {
+		display: inline-block;
+		padding: 0 20px;
+	}
+	.grey-text {
+		color: $grey;
+		font-size: 23px;
+		font-weight: 600;
+	}
+	.green-text {
+		color: $green;
+		font-size: 23px;
+		font-weight: 700;
+	}
+}

@@ -14,8 +14,6 @@ gem 'uglifier'
 # Utility
 gem 'haml', '~> 4.0.7'
 gem 'erb2haml'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
 gem 'annotate'
 
 # Data
@@ -54,3 +52,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'foreman'
+
+gem 'mini_racer', platforms: :ruby

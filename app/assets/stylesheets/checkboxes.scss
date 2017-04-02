@@ -1,0 +1,27 @@
+input.male[type=checkbox]:checked + label {
+	color: #4D4DFF;
+	border-color: #4D4DFF;
+}
+input[type=button] {
+	transition: 0.3s;
+	color: grey;
+	background-color: white;
+	border: 3px solid grey;
+	padding: 5px;
+	border-radius: 5px;
+
+	&:focus {
+		outline: 0;
+	}
+	&.male:hover, &.male:active {
+		color: #4D4DFF;
+		border-color: #4D4DFF;
+	}
+	&.female:hover, &.female:active {
+		color: #27ae60;
+		border-color: #27ae60;
+	}
+}
+input[type=range].slider {
+	width: 500px;
+}

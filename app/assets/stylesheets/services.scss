@@ -1,0 +1,31 @@
+@import 'variables';
+
+.service-cards {
+	display: inline-flex;
+	a, a:hover, a:focus {
+		text-decoration: none;
+	}
+}
+.service-card {
+	padding: 20px;
+	width: 250px;
+	height: 400px;
+	border: 2px solid $grey;
+	margin: 20px;
+	border-radius: 6px;
+	text-align: left;
+
+	.title {
+		color: darken($grey, 5% );
+		font-size: 20px;
+	}
+
+	.image {
+
+	}
+
+	.description {
+		color: lighten($grey, 5% );
+		font-size: 15px;
+	}
+}

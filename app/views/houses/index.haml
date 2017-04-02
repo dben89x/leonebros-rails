@@ -1,0 +1,6 @@
+#gallery
+	.container
+		.title
+			Gallery of Our Work
+		-@houses.each do |house|
+			=react_component("House", props: {images: images}, prerender: true)

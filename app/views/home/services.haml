@@ -1,0 +1,12 @@
+#services
+	.container
+		.title
+			Our Services
+		.info
+			.service-cards
+				-@services.each do |service|
+					=link_to service[:url] do
+						.service-card
+							.title=service[:title]
+							.image=service[:image]
+							.description=service[:description]

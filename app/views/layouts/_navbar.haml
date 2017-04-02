@@ -1,0 +1,29 @@
+%nav.navbar.navbar-fixed-top
+	.container-fluid
+		.navbar-header
+			%button.navbar-toggle{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			=link_to '', root_path, class: 'navbar-brand'
+		#navbar.collapse.navbar-collapse
+			%ul.nav.navbar-nav.nav-pills.nav-stacked
+				%li
+					=link_to gallery_path do
+						Gallery
+				%li
+					=link_to services_path do
+						Services
+				%li
+					=link_to about_path do
+						About Us
+
+			%ul.nav.navbar-nav.navbar-right.nav-pills.nav-stacked
+				%li.tel
+					=link_to 'tel:5866777568' do
+						%span.fa.fa-phone
+						(586) 677-7568
+				%li.contact
+					=link_to '/contact' do
+						%span.fa.fa-envelope
+						Request a Free Estimate
