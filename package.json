@@ -4,10 +4,11 @@
   "private": true,
   "engines": {
     "node": "6.9.0",
-    "npm": "4.1.1"
+    "npm": "4.1.1",
+		"yarn": "0.21.3"
   },
   "scripts": {
-    "postinstall": "cd client && yarn install",
+    "postinstall": "cd client && yarn install --ignore-engines",
     "rails-server": "echo 'visit http://localhost:3000' && foreman start -f Procfile.dev",
     "test": "rspec"
   }
